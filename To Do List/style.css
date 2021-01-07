@@ -26,10 +26,9 @@ form{
 }
 
 form input, form button{
-    padding: 0.3rem;
-    font-size: 1.6rem;
+    padding: 0.5rem;
+    font-size: 2rem;
     border: none;
-    border-radius: .2rem;
     background: #fbfbff;
 }
 
@@ -52,20 +51,19 @@ form button:hover{
 }
 
 .todo-list{
-    min-width: 35%;
+    min-width: 30%;
     list-style: none;
 }
 
 .todo{
     margin: 0.5rem;
-    padding-left: 0.3rem;
     background: #fbfbff;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     transition: all .5s ease;
-    border-radius: .3rem;
 }
 
 .todo li{
@@ -82,7 +80,6 @@ form button:hover{
 }
 .trash-btn{
     background: #ff6348;
-    border-radius: 0 0.3rem 0.3rem 0;
 }
 
 .fa-trash, .fa-check{
@@ -115,11 +112,8 @@ select{
 
 select{
     color:#70a1ff;
-    width: 10rem;
-    padding: .3rem;
-    font-size: 1.5rem;
-    border-radius: .3rem;
     cursor: pointer;
+    width: 12rem;
 }
 
 .select::after{
@@ -128,13 +122,20 @@ select{
     background:#70a1ff;
     top: 0;
     right: 0;
-    padding: .3rem;
-    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
     pointer-events: none;
-    transition: all .3s ease;
 }
 
 .select:hover::after{
     background: #fff;
     color:#70a1ff;
+}
+
+.todo-filter{
+    padding: 1rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;  
 }
